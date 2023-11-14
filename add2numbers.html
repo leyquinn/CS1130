@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Add 2 numbers</h1> <br>
+<label for="n1">First Number:</label><br>
+<input type="number" id="n1"><br>
+<label for="n2">Second Number:</label><br>
+<input type="number" id="n2"><br>
+<button onclick="computesum()">Compute Sum/button<br>
+
+<label for="sum">Sum:</label>
+<input id="sum" readonly type="number">
+
+
+<br>
+<br>
+<a href="index.html">Back to Home Page</a>
+
+<script>
+function computesum()
+{      var n1,n2,sum;
+
+n1 = document.getElementById("n1").value + 1;
+
+console.log(n1);
+n2 = document.getElementById("n2").value + 1;
+
+sum = n1+n2;
+document.getElementById("sum").value = sum;
+
+}
+
+</body>
+</html>
